@@ -1,7 +1,7 @@
 # **KeyCode**  
 [![Author](http://img.shields.io/badge/author-Kuroyasha512-blue.svg)](https://gitlab.com/Kuroyasha512)
 [![Source Code](http://img.shields.io/badge/source-Kuroyasha512/keycode-blue.svg)](https://gitlab.com/Kuroyasha512/keycode/tree/master/source)
-[![Software License](https://img.shields.io/badge/license-GNU_GPLv3-brightgreen.svg)](https://gitlab.com/Kuroyasha512/keycode/edit/master/README.md#license)
+[![Software License](https://img.shields.io/badge/license-GNU_GPLv3-brightgreen.svg)](https://gitlab.com/Kuroyasha512/keycode#license)
 [![Status](https://img.shields.io/badge/Status-Development-red.svg)](https://gitlab.com/Kuroyasha512/keycode/edit/master/README.md)
 [![os](https://img.shields.io/badge/os-GNU/Linux-red.svg)](https://www.gnu.org/gnu/linux-and-gnu.en.html)
 
