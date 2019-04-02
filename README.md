@@ -17,7 +17,8 @@ Get Keycode From keyboard
 
 **step 0** install git and ncurses with your favorite package control (xbps/apt/aptget/etc)  
 **Step 1** `git clone https://gitlab.com/Kuroyasha512/keycode.git`  
-**step 2** 'g++ ./source/keycode.cpp -o keycode -l ncurses'  
+**step 2** `cd keycode`  
+**step 3** `g++ ./source/keycode.cpp -o keycode -l ncurses`  
 
 **(Optional) to make Program Use library in lib folder use patchelf**  
 `patchelf --set-rpath ./lib/ ./keycode`  
