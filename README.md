@@ -8,13 +8,11 @@
 Get Keycode From keyboard
 
 ## **Setup**
-**use binary(only 32bit)**  
+**use binary**  
 `git clone https://gitlab.com/Kuroyasha512/keycode.git`  
 `cd keycode`  
 `./keycode` (tui)  
 `./keycode -v $(your char)` (get opt)  
-
-for 64bit use compile from source
 
 ## **Compile From Source**
 
