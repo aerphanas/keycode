@@ -1,7 +1,7 @@
 [![Author](http://img.shields.io/badge/author-Kuroyasha512-blue.svg)](https://gitlab.com/Kuroyasha512)
-[![Source Code](http://img.shields.io/badge/source-Kuroyasha512/keycode-blue.svg)](https://gitlab.com/Kuroyasha512/rdbms-tui/tree/master/Source)  
-[![Software License](https://img.shields.io/badge/license-GNU_GPLv3-brightgreen.svg)](https://gitlab.com/Kuroyasha512/rdbms-tui/edit/master/README.md#license)
-[![Status](https://img.shields.io/badge/Status-Stable-green.svg)](https://gitlab.com/Kuroyasha512/keycode/edit/master/README.md#info-status)
+[![Source Code](http://img.shields.io/badge/source-Kuroyasha512/keycode-blue.svg)](https://gitlab.com/Kuroyasha512/keycode/tree/master/source)  
+[![Software License](https://img.shields.io/badge/license-GNU_GPLv3-brightgreen.svg)](https://gitlab.com/Kuroyasha512/keycode/edit/master/README.md#license)
+[![Status](https://img.shields.io/badge/Status-Stable-green.svg)](https://gitlab.com/Kuroyasha512/keycode/edit/master/README.md)
 
 
 
