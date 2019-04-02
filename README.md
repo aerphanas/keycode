@@ -1,13 +1,20 @@
+# **KeyCode**  
 [![Author](http://img.shields.io/badge/author-Kuroyasha512-blue.svg)](https://gitlab.com/Kuroyasha512)
-[![Source Code](http://img.shields.io/badge/source-Kuroyasha512/keycode-blue.svg)](https://gitlab.com/Kuroyasha512/keycode/tree/master/source)  
+[![Source Code](http://img.shields.io/badge/source-Kuroyasha512/keycode-blue.svg)](https://gitlab.com/Kuroyasha512/keycode/tree/master/source)
 [![Software License](https://img.shields.io/badge/license-GNU_GPLv3-brightgreen.svg)](https://gitlab.com/Kuroyasha512/keycode/edit/master/README.md#license)
 [![Status](https://img.shields.io/badge/Status-Development-red.svg)](https://gitlab.com/Kuroyasha512/keycode/edit/master/README.md)
-
-
-
-# **KeyCode**
+[![os](https://img.shields.io/badge/os-GNU/Linux-red.svg)](https://www.gnu.org/gnu/linux-and-gnu.en.html)
 
 Get Keycode From keyboard
+
+## **Setup**
+**use binary(only 32bit)**  
+`git clone https://gitlab.com/Kuroyasha512/keycode.git`  
+`cd keycode`  
+`./keycode` (tui)  
+`./keycode -v $(your char)` (get opt)  
+
+for 64bit use compile from source
 
 ## **Compile From Source**
 
@@ -15,7 +22,7 @@ Get Keycode From keyboard
 - ncurses
 - gcc
 
-**step 0** install git and ncurses with your favorite package control (xbps/apt/aptget/etc)  
+**step 0** install git,ncurses and gcc with your favorite package control (xbps/apt/aptget/etc)  
 **Step 1** `git clone https://gitlab.com/Kuroyasha512/keycode.git`  
 **step 2** `cd keycode`  
 **step 3** `g++ ./source/keycode.cpp -o keycode -l ncurses`  
