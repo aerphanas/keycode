@@ -1,8 +1,32 @@
+#include <iostream>
 #include <ncurses.h>
-#include <cstdio>
+#include <unistd.h>
 
-int main()
-{
+void gui();
+void cli(int x);
+
+int main(int argc, char* argv[]) {
+  int c ;
+  int input;
+  if((c = getopt(argc, argv, "v:")) != -1) {
+    switch(c) {
+      case 'v':
+	if(optarg) {
+	  input = *optarg;
+	  cli(input);
+	}
+        break;
+      default:
+	std::cout<<"Use -v to get char in prompt"<<std::endl;
+	break;
+      }
+  } else {
+    gui();
+  }
+  return 0;
+}
+
+void gui(){
   // data type initial
   WINDOW *mainwin, *winbox, *hint, *ans;
   MEVENT event;
@@ -80,5 +104,8 @@ int main()
   delwin(winbox);
   delwin(mainwin);
   endwin();
-  return 0;
+}
+
+void cli(int x){
+  std::cout<<"Keycode : "<<x<<std::endl;
 }
