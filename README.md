@@ -9,26 +9,30 @@ Get Keycode From keyboard
 
 ## **Setup**
 **use binary**  
-`git clone https://gitlab.com/Kuroyasha512/keycode.git`  
-`cd keycode`  
-`./keycode` (tui)  
-`./keycode -v $(your char)` (get opt)  
+```sh
+git clone https://gitlab.com/Kuroyasha512/keycode.git
+cd keycode
+./keycode(tui)
+./keycode -v $(your char) (get opt)
+```
 
 ## **Compile From Source**
 
 **Prerequisites :**
 - ncurses
 - gcc
-
-**step 0** install git,ncurses and gcc with your favorite package control (xbps/apt/aptget/etc)  
-**Step 1** `git clone https://gitlab.com/Kuroyasha512/keycode.git`  
-**step 2** `cd keycode`  
-**step 3** `g++ ./source/keycode.cpp -o keycode -l ncurses`  
-
+```sh
+# install git,ncurses and gcc with your favorite package control (xbps/apt/aptget/etc)
+$ git clone https://gitlab.com/Kuroyasha512/keycode.git
+$ cd keycode
+$ g++ ./source/keycode.cpp -o keycode -l ncurses
+```
 **(Optional) to make Program Use library in lib folder use patchelf**  
-`patchelf --set-rpath ./lib/ ./keycode`  
-and set interpreter with  
-`patchelf --set-interpreter ./lib/ld-linux.so.2 ./keycode`
+```sh
+patchelf --set-rpath ./lib/ ./keycode
+# and set interpreter with
+patchelf --set-interpreter ./lib/ld-linux.so.2 ./keycode
+```
 
 
 ## **License**
