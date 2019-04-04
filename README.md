@@ -14,11 +14,16 @@ git clone https://gitlab.com/Kuroyasha512/keycode.git
 cd keycode
 ./keycode(tui)
 ./keycode -v $(your char) (get opt)
+```  
+install via dpkg*
+```sh
+# download deb file from https://gitlab.com/Kuroyasha512/keycode/releases
+sudo dpkg -i KeyCode_<major version>.<minor version>-<package revision>.deb
 ```
 
 ## **Compile From Source**
 
-**Prerequisites :**
+***Prerequisites :**
 - ncurses
 - gcc
 ```sh
