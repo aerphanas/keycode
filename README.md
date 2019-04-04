@@ -23,9 +23,9 @@ cd keycode
 - gcc
 ```sh
 # install git,ncurses and gcc with your favorite package control (xbps/apt/aptget/etc)
-$ git clone https://gitlab.com/Kuroyasha512/keycode.git
-$ cd keycode
-$ g++ ./source/keycode.cpp -o keycode -l ncurses
+git clone https://gitlab.com/Kuroyasha512/keycode.git
+cd keycode
+g++ ./source/keycode.cpp -o keycode -l ncurses
 ```
 **(Optional) to make Program Use library in lib folder use patchelf**  
 ```sh
