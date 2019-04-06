@@ -43,7 +43,7 @@ patchelf --set-interpreter ./lib/ld-linux.so.2 ./keycode
 
 ## **License**
 
-This project is licensed under the GNU GPLv3 License - see the [LICENSE](https://gitlab.com/Kuroyasha512/keycode/blob/master/LICENSE) file for details
+This project is licensed under [![LICENSE](https://www.gnu.org/graphics/gplv3-with-text-84x42.png)](https://gitlab.com/Kuroyasha512/keycode/blob/master/LICENSE) - see the [LICENSE](https://gitlab.com/Kuroyasha512/keycode/blob/master/LICENSE) file for details
 
 ### **Philosophy**
 My program use Unix Philosophy :  
