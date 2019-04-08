@@ -17,7 +17,7 @@ int main(int argc, char* argv[]) {
 	}
         break;
       default:
-	std::cout<<"Use -v to get char in prompt"<<std::endl;
+	std::cerr<<"Use -v to get char in prompt"<<std::endl;
 	break;
       }
   } else {
