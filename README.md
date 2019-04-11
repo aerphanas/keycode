@@ -6,7 +6,7 @@
 [![Status](https://img.shields.io/badge/Status-Development-red.svg)](https://gitlab.com/Kuroyasha512/keycode/blob/master/README.md)
 [![os](https://img.shields.io/badge/os-GNU/Linux-red.svg)](https://www.gnu.org/gnu/linux-and-gnu.en.html)
 
-Get Keycode From keyboard
+Get Keycode From keyboard,useful when you want remap your keyboard
 
 ## **Setup**
 **use binary**  
@@ -39,7 +39,6 @@ patchelf --set-rpath ./lib/ ./keycode
 # and set interpreter with
 patchelf --set-interpreter ./lib/ld-linux.so.2 ./keycode
 ```
-
 
 ## **License**
 
