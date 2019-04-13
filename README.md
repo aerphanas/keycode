@@ -27,6 +27,7 @@ sudo dpkg -i KeyCode_<major version>.<minor version>-<package revision>.deb
 ***Prerequisites :**
 - ncurses
 - gcc
+- minimum cols & lines in terminal = 26 & 13
 ```sh
 # install git,ncurses and gcc with your favorite package control (xbps/apt/aptget/etc)
 git clone https://gitlab.com/Kuroyasha512/keycode.git
