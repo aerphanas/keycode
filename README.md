@@ -11,8 +11,6 @@ Get Keycode From keyboard,useful when you want remap your keyboard
 ## **Setup**
 **use binary**  
 ```sh
-git clone https://gitlab.com/Kuroyasha512/keycode.git
-cd keycode
 ./keycode(tui)
 ./keycode -v $(your char) (get opt)
 ```  
@@ -24,34 +22,32 @@ sudo dpkg -i KeyCode_<major version>.<minor version>-<package revision>.deb
 
 ## **Compile From Source**
 
-***Prerequisites :**
-- ncurses
-- gcc
-- minimum cols & lines in terminal = 26 & 13  
+***Prerequisites :**  
+- ncurses  
+- gcc  
+- cmake  
+- minimum cols & lines in terminal is 26 and 13  
 ** Check cols & lines on terminal : **  
 cols = ```tput cols```  
 lines = ```tput lines```
 ```sh
-# install git,ncurses and gcc with your favorite package control (xbps/apt/aptget/etc)
-git clone https://gitlab.com/Kuroyasha512/keycode.git
-cd keycode
-g++ ./source/keycode.cpp -o keycode -l ncurses
-```
-**(Optional) to make Program Use library in lib folder use patchelf**  
+# install git,ncurses and gcc with your favorite package control (xbps/apt/aptget/etc)  
 ```sh
-patchelf --set-rpath ./lib/ ./keycode
-# and set interpreter with
-patchelf --set-interpreter ./lib/ld-linux.so.2 ./keycode
+git clone https://gitlab.com/Kuroyasha512/keycode.git  
+cd keycode  
+cd <Release/Debug>
+cmake -DCMAKE_BUILD_TYPE=<Debug/Relese> ..
+# example : cmake -DCMAKE_BUILD_TYPE=Debug ..
+make
+```
+
+**(Info) to make Program Use library in lib folder use patchelf**  
+```sh
+patchelf --set-rpath <lib> <obj>
+# and also you can set interpreter with
+patchelf --set-interpreter <interpreter> <obj>
 ```
 
 ## **License**
 
 This project is licensed under [![LICENSE](https://www.gnu.org/graphics/gplv3-with-text-84x42.png)](https://gitlab.com/Kuroyasha512/keycode/blob/master/LICENSE) - see the [LICENSE](https://gitlab.com/Kuroyasha512/keycode/blob/master/LICENSE) file for details
-
-### **Philosophy**
-My program use Unix Philosophy :  
-The UNIX philosophy is documented by Doug McIlroy in the Bell System Technical Journal from 1978  
-1. Make each program do one thing well. To do a new job, build afresh rather than complicate old programs by adding new "features".
-2. Expect the output of every program to become the input to another, as yet unknown, program. Don't clutter output with extraneous information. Avoid stringently columnar or binary input formats. Don't insist on interactive input.
-3. Design and build software, even operating systems, to be tried early, ideally within weeks. Don't hesitate to throw away the clumsy parts and rebuild them.
-4. Use tools in preference to unskilled help to lighten a programming task, even if you have to detour to build the tools and expect to throw some of them out after you've finished using them.
