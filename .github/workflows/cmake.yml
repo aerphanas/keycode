@@ -16,6 +16,9 @@ jobs:
     steps:
     - uses: actions/checkout@v3
 
+    - name: install ncurses
+      run: sudo apt install -y ncurses
+
     - name: release
       run: cd ${{env.BUILD_TYPE}}
 
