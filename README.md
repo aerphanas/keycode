@@ -1,8 +1,7 @@
 # **KeyCode**  
 [![Author](https://img.shields.io/badge/author-aerphanas-blue.svg)](https://github.com/aerphanas)
 [![Software License](https://img.shields.io/badge/license-GNU_GPLv3-brightgreen.svg)](https://gitlab.com/Kuroyasha512/keycode#license)
-[![CMake](https://github.com/aerphanas/keycode/actions/workflows/cmake.yml/badge.svg)](https://github.com/aerphanas/keycode/actions/workflows/cmake.yml)
-
+[![Build-Test](https://github.com/aerphanas/keycode/actions/workflows/action.yml/badge.svg)](https://github.com/aerphanas/keycode/actions/workflows/action.yml)
 
 Get Keycode From keyboard,useful when you want remap your keyboard
 
