@@ -17,13 +17,10 @@ jobs:
     - uses: actions/checkout@v3
 
     - name: install ncurses
-      run: sudo apt install -y libncurses5-dev
+      run: sudo apt install -y libncurses-dev
 
-    - name: release
-      run: cd ${{env.BUILD_TYPE}}
+    - name: cd to src
+      run: cd src
 
-    - name: Configure CMake
-      run: cmake -DCMAKE_BUILD_TYPE=${{env.BUILD_TYPE}} ${{github.workspace}}
-      
-    - name: Build
-      run: make
+    - name: Compile
+      run: g++ -Wall -Werror -lncurses
