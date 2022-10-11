@@ -20,7 +20,7 @@ jobs:
       run: cd ${{env.BUILD_TYPE}}
 
     - name: Configure CMake
-      run: cmake -DCMAKE_BUILD_TYPE=${{env.BUILD_TYPE}} ..
+      run: cmake -DCMAKE_BUILD_TYPE=${{env.BUILD_TYPE}} ${{github.workspace}}
       
     - name: Build
       run: make
