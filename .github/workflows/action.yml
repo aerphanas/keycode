@@ -19,8 +19,5 @@ jobs:
     - name: install ncurses
       run: sudo apt install -y libncurses-dev
 
-    - name: cd to src
-      run: cd src
-
     - name: Compile
-      run: g++ -Wall -Werror *.cpp -lncurses
+      run: g++ -Wall -Werror src/*.cpp -lncurses
