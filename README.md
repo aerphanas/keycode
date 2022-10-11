@@ -1,8 +1,7 @@
 # **KeyCode**  
-[![Author](https://img.shields.io/badge/author-Kuroyasha512-blue.svg)](https://gitlab.com/Kuroyasha512)
+[![Author](https://img.shields.io/badge/author-aerphanas-blue.svg)](https://github.com/aerphanas)
 [![Software License](https://img.shields.io/badge/license-GNU_GPLv3-brightgreen.svg)](https://gitlab.com/Kuroyasha512/keycode#license)
 [![Current](https://img.shields.io/badge/current-V1.1-2--.svg)](https://gitlab.com/Kuroyasha512/keycode/releases)
-[![os](https://img.shields.io/badge/os-GNU/Linux-red.svg)](https://www.gnu.org/gnu/linux-and-gnu.en.html)
 
 Get Keycode From keyboard,useful when you want remap your keyboard
 
