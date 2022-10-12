@@ -1,15 +1,19 @@
 # **KeyCode**
-[![Author](https://img.shields.io/badge/author-aerphanas-blue.svg)](https://github.com/aerphanas)
-[![Software License](https://img.shields.io/badge/license-GNU_GPLv3-brightgreen.svg)](https://gitlab.com/Kuroyasha512/keycode#license)
+[![Author](https://img.shields.io/badge/author-aerphanas-red.svg)](https://github.com/aerphanas)
 [![Build-Test](https://github.com/aerphanas/keycode/actions/workflows/action.yml/badge.svg)](https://github.com/aerphanas/keycode/actions/workflows/action.yml)
 
-Get Keycode From keyboard,useful when you want remap your keyboard
-
+Get Keycode From keyboard
 ## **Setup**
-**use binary**
+**binary**
 ```sh
 ./keycode(tui)
 ./keycode -v $(your char) (get opt)
+```
+
+**Docker**
+```sh
+docker build -t keycode . # build docker image
+docker run -it keycode # run docker image interactively, currently use support tui
 ```
 
 ## **Compile From Source**
