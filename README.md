@@ -13,7 +13,7 @@ Get Keycode From keyboard
 **Docker**
 ```sh
 docker build -t keycode . # build docker image
-docker run -it keycode # run docker image interactively, currently use support tui
+docker run -it keycode # run docker image interactively
 ```
 
 ## **Compile From Source**
