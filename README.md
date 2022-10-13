@@ -12,20 +12,30 @@ Get Keycode From keyboard
 
 **Docker**
 ```sh
-docker build -t keycode . # build docker image
-docker run -it keycode # run docker image interactively
+docker pull aerphanas/keycode:latest # pull docker image from docker hub
+docker run -it keycode:latest # run docker image interactively
 ```
 
 ## **Compile From Source**
 
 Prerequisites :
 - ncurses
-- gcc/g++
+- gcc
 - libstdc++
+- git
 ```sh
 # install git,ncurses and gcc with your favorite package control (xbps/apt/aptget/etc)
 git clone https://gitlab.com/Kuroyasha512/keycode.git
 cd keycode
 cd src
 g++ ./keycode/src/keycode.cpp -lncurses -o keycode.o
+```
+
+## **Build with Dockerfile**
+
+```sh
+git clone https://gitlab.com/Kuroyasha512/keycode.git
+docker build -t keycode:latest . # build docker image
+docker run -it keycode:latest # run docker image interactively
+
 ```
