@@ -25,7 +25,7 @@ Prerequisites :
 - git
 ```sh
 # install git,ncurses and gcc with your favorite package control (xbps/apt/aptget/etc)
-git clone https://gitlab.com/Kuroyasha512/keycode.git
+git clone https://gitlab.com/aerphanas/keycode.git
 cd keycode
 cd src
 g++ ./keycode/src/keycode.cpp -lncurses -o keycode.o
@@ -34,7 +34,7 @@ g++ ./keycode/src/keycode.cpp -lncurses -o keycode.o
 ## **Build with Dockerfile**
 
 ```sh
-git clone https://gitlab.com/Kuroyasha512/keycode.git
+git clone https://gitlab.com/aerphanas/keycode.git
 docker build -t keycode:latest . # build docker image
 docker run -it keycode:latest # run docker image interactively
 
