@@ -1,4 +1,6 @@
 FROM alpine:latest
+LABEL org.opencontainers.image.source=https://github.com/aerphanas/keycode
+LABEL org.opencontainers.image.description="Fast Simple KeyCode Grabber writen in C++"
 WORKDIR /git
 RUN apk add --no-cache ncurses-dev git g++ libstdc++ \
     && git clone https://github.com/aerphanas/keycode.git \
