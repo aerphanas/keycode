@@ -28,22 +28,8 @@ Prerequisites :
 
 - ncurses
 - gcc
-- libstdc++
-- git
+- pkg-config
 
 ```sh
-# install git,ncurses and gcc with your favorite package control (xbps/apt/aptget/etc)
-git clone https://gitlab.com/aerphanas/keycode.git
-cd keycode
-cd src
-g++ ./keycode/src/keycode.cpp -lncurses -o keycode.o
-```
-
-## **Build with Dockerfile**
-
-```sh
-git clone https://gitlab.com/aerphanas/keycode.git
-docker build -t keycode:latest . # build docker image
-docker run -it keycode:latest # run docker image interactively
-
+gcc ./keycode/src/main.c -o keycode.o `pkg-config --cflags --libs ncurses`
 ```
